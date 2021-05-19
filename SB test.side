@@ -1,0 +1,662 @@
+{
+  "id": "460d717e-7704-41ad-8706-48b93d0915f5",
+  "version": "2.0",
+  "name": "SB test",
+  "url": "https://skillbox.ru",
+  "tests": [{
+    "id": "34735a9e-a55c-438c-beb2-ffba5428d88a",
+    "name": "тест, который проверит какое первое по популярности видео в направлении “программирование” по запросу “ML” ",
+    "commands": [{
+      "id": "c9a7c185-ec27-4798-9402-8b6770973e72",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "416e6337-646a-4ff9-b6c1-97f871858395",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-radio-toggle__label:nth-child(2)",
+      "targets": [
+        ["css=.ui-radio-toggle__label:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='#app']/main/section/section/div/div/label[2]", "xpath:idRelative"],
+        ["xpath=//label[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b404982-e2ed-45b1-8f1d-d04454b4d71c",
+      "comment": "",
+      "command": "click",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=search", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='#app']/main/section/section/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5b1daaa-0c05-40b5-bba8-943b784b1641",
+      "comment": "",
+      "command": "type",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=search", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='#app']/main/section/section/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "ML"
+    }, {
+      "id": "e369b2df-9d0b-4698-bf67-7b93b484f592",
+      "comment": "",
+      "command": "click",
+      "target": "css=.select__group",
+      "targets": [
+        ["css=.select__group", "css:finder"],
+        ["xpath=//div[@id='#app']/main/section/section/label/span[2]/select", "xpath:idRelative"],
+        ["xpath=//span[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1bb276d6-a518-4321-a7c1-058ead8a4de1",
+      "comment": "",
+      "command": "select",
+      "target": "css=.select__group",
+      "targets": [],
+      "value": "label=Программирование"
+    }, {
+      "id": "affb76f0-bc46-49f4-ab0a-e5eb5e91029d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.select__group > option:nth-child(2)",
+      "targets": [
+        ["css=.select__group > option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='code']", "xpath:attributes"],
+        ["xpath=//div[@id='#app']/main/section/section/label/span[2]/select/option[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/select/option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Программирование')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "90648b30-60b6-41a0-9bcc-0a07440e23d9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.webinars__item:nth-child(1) .webinar-card__title",
+      "targets": [
+        ["css=.webinars__item:nth-child(1) .webinar-card__title", "css:finder"],
+        ["xpath=//div[@id='#app']/main/section/div/ul/li/a/div[2]/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Основы Python')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2b6839fb-b693-4607-9082-b93e4bb0b2a8",
+    "name": "В направлении “Игры” есть хотя бы одна запись по запросу “Unity”",
+    "commands": [{
+      "id": "078a9cdb-dcfa-4c20-9502-fcc753f796d8",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "598e848b-6d3a-4415-91a5-2c3a8793c882",
+      "comment": "",
+      "command": "click",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=search", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='#app']/main/section/section/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f29baf7-2f00-4a5e-8ec6-99502a6f141f",
+      "comment": "",
+      "command": "type",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=search", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='#app']/main/section/section/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "Unity"
+    }, {
+      "id": "bc6097d5-cb0a-4956-a0db-e5b780affcad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.select__group",
+      "targets": [
+        ["css=.select__group", "css:finder"],
+        ["xpath=//div[@id='#app']/main/section/section/label/span[2]/select", "xpath:idRelative"],
+        ["xpath=//span[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62649177-9d12-4be7-bd71-5c4be59d1ac8",
+      "comment": "",
+      "command": "select",
+      "target": "css=.select__group",
+      "targets": [],
+      "value": "label=Игры"
+    }, {
+      "id": "4c652d1a-2813-47ac-821b-9ea412431606",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(6)",
+      "targets": [
+        ["css=option:nth-child(6)", "css:finder"],
+        ["xpath=//option[@value='games']", "xpath:attributes"],
+        ["xpath=//div[@id='#app']/main/section/section/label/span[2]/select/option[6]", "xpath:idRelative"],
+        ["xpath=//option[6]", "xpath:position"],
+        ["xpath=//option[contains(.,'Игры')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9959377e-efd5-4cc2-8672-702358ad9524",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.webinars__item:nth-child(1) .webinar-card__title",
+      "targets": [
+        ["css=.webinars__item:nth-child(1) .webinar-card__title", "css:finder"],
+        ["xpath=//div[@id='#app']/main/section/div/ul/li/a/div[2]/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Прорабатываем растительность')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bc71c5dc-1528-4a7d-ab62-505307e1782c",
+    "name": "В направлении “Маркетинг” нет ни одной записи по запросу “Unity”",
+    "commands": [{
+      "id": "d586bc84-2372-4961-975e-9461c7bdbfd3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97342770-1810-41c1-903e-3489e74d0da8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.select__group",
+      "targets": [
+        ["css=.select__group", "css:finder"],
+        ["xpath=//div[@id='#app']/main/section/section/label/span[2]/select", "xpath:idRelative"],
+        ["xpath=//span[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "110594f3-7cb2-4a89-bf30-0c266f4e46ff",
+      "comment": "",
+      "command": "select",
+      "target": "css=.select__group",
+      "targets": [],
+      "value": "label=Маркетинг"
+    }, {
+      "id": "4d9ca3d9-2c30-4e6a-b67c-cd7477fee4a3",
+      "comment": "",
+      "command": "type",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=search", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='#app']/main/section/section/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "Unity"
+    }, {
+      "id": "0d24eaf4-4c51-43ae-9c73-0afd4b697f56",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(4)",
+      "targets": [
+        ["css=option:nth-child(4)", "css:finder"],
+        ["xpath=//option[@value='marketing']", "xpath:attributes"],
+        ["xpath=//div[@id='#app']/main/section/section/label/span[2]/select/option[4]", "xpath:idRelative"],
+        ["xpath=//option[4]", "xpath:position"],
+        ["xpath=//option[contains(.,'Маркетинг')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7df4cd72-785b-4ec7-abee-0e27f1cee82f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search__btn > .icon",
+      "targets": [
+        ["css=.search__btn > .icon", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "a836fefd-cb22-4c02-9e8f-1d45a12ba67a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-no-result",
+      "targets": [
+        ["css=.filter-no-result", "css:finder"],
+        ["xpath=//div[@id='#app']/main/section/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aeb4ec47-0015-4240-a21d-4ace795af675",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.filter-no-result",
+      "targets": [
+        ["css=.filter-no-result", "css:finder"],
+        ["xpath=//div[@id='#app']/main/section/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": "Ничего не найдено. Очистить поиск"
+    }, {
+      "id": "33b0a37b-cb3f-4aa5-b93e-1204b11ee3d6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.filter-no-result",
+      "targets": [
+        ["css=.filter-no-result", "css:finder"],
+        ["xpath=//div[@id='#app']/main/section/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fc2ffff-c3d3-4e16-a6b8-0334c8b06512",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "36851f06-dcfa-4901-9870-3994678af586",
+    "name": "Кнопка “Х” (крестик) работает и очищает поисковый запрос",
+    "commands": [{
+      "id": "c317c179-1296-4b6a-950c-4946daa19c8a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3924f31f-6ddd-45d4-ae71-fb5efb4ffa94",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1355x703",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4903503f-c9cb-4559-923f-46f9e82447d0",
+      "comment": "",
+      "command": "click",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=search", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='#app']/main/section/section/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7906ff1-4cf8-4bd2-a604-23c07aff8ab5",
+      "comment": "",
+      "command": "type",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=search", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='#app']/main/section/section/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "еуые"
+    }, {
+      "id": "da24fd5e-9eff-4461-be0a-ca49f77ee9dd",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=search", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='#app']/main/section/section/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "67823cae-6083-4e24-afc2-928abb012e99",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search__btn use",
+      "targets": [
+        ["css=.search__btn use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "89b5b63a-0814-4407-8a4c-aca6d8668453",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.webinars__item:nth-child(1) .webinar-card__title",
+      "targets": [
+        ["css=.webinars__item:nth-child(1) .webinar-card__title", "css:finder"],
+        ["xpath=//div[@id='#app']/main/section/div/ul/li/a/div[2]/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Запуск рекламы в Instagram, Facebook и «ВКонтакте»: подводим итоги')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "50d91868-694b-4458-88a7-919cb2206ec2",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "acfcc028-bfb7-4a6e-a5b8-71a80ecface6",
+    "name": "Внизу страницы есть кнопка “Загрузить еще 40 вебинаров”, проверьте что она работает",
+    "commands": [{
+      "id": "3625e283-4ec5-4347-973e-0227aec6e74f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a5039431-2381-41da-9528-318576e5bfcf",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "1cd8c14d-8472-4420-bea8-8524c08df663",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.load-more",
+      "targets": [
+        ["css=.load-more", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='#app']/main/section/button", "xpath:idRelative"],
+        ["xpath=//main/section/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Eще 40 вебинаров')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b48b828b-3a2d-48e0-a696-eafb1c1f47f5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.load-more",
+      "targets": [
+        ["css=.load-more", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='#app']/main/section/button", "xpath:idRelative"],
+        ["xpath=//main/section/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Eще 40 вебинаров')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d59b0429-53ab-4f0e-aaf0-8784335ad908",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6e8ef525-0408-4f33-9463-774c6c8abeac",
+    "name": "В разделе “Плэйлисты” нужно проверить что в направлении “программирование” есть видео по теме “Веб-разработка”, и проверить сколько их",
+    "commands": [{
+      "id": "0706b043-4023-4c38-bb05-7b60dd0d9690",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3263e32-f1e6-48f2-9993-a635d80e1caa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Плейлисты",
+      "targets": [
+        ["linkText=Плейлисты", "linkText"],
+        ["css=.tabs-list__item:nth-child(2) > .ui-tab", "css:finder"],
+        ["xpath=//a[contains(text(),'Плейлисты')]", "xpath:link"],
+        ["xpath=//div[@id='#app']/main/header/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/playlists/')]", "xpath:href"],
+        ["xpath=//div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Плейлисты')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e8c385c-2ba0-4e3d-99c3-aeae16cd9010",
+      "comment": "",
+      "command": "click",
+      "target": "css=.select__group",
+      "targets": [
+        ["css=.select__group", "css:finder"],
+        ["xpath=//div[@id='#app']/main/section/label/span[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38282928-e90d-4ba4-bb20-779ccbb514f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.playlists",
+      "targets": [
+        ["css=.playlists", "css:finder"],
+        ["xpath=//div[@id='#app']/main", "xpath:idRelative"],
+        ["xpath=//main", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd07e871-4985-4cbb-af4b-9feec8e438ed",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.playlist:nth-child(3) .playlist__item:nth-child(4) .playlist-card__title",
+      "targets": [
+        ["css=.playlist:nth-child(3) .playlist__item:nth-child(4) .playlist-card__title", "css:finder"],
+        ["xpath=//div[@id='#app']/main/section[2]/ul/li[4]/a/div/h3", "xpath:idRelative"],
+        ["xpath=//li[4]/a/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Веб-разработка')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0d4ab72-6a11-4cbc-93b3-c734a05c7fb7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.playlist:nth-child(3) .playlist__item:nth-child(4) .playlist-card__count",
+      "targets": [
+        ["css=.playlist:nth-child(3) .playlist__item:nth-child(4) .playlist-card__count", "css:finder"],
+        ["xpath=//div[@id='#app']/main/section[2]/ul/li[4]/a/div/span", "xpath:idRelative"],
+        ["xpath=//li[4]/a/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'8 видео')]", "xpath:innerText"]
+      ],
+      "value": "8 видео"
+    }, {
+      "id": "f4413903-ae5d-4ab3-9c00-c3c38a40fdf7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e0c9c8c9-51c2-4388-af34-f2aaefbe6bd0",
+    "name": "Skillbox smoke test 1 - помощь в выборе допускает номер телефона больше 10 цифр",
+    "commands": [{
+      "id": "05a691f9-8aca-4284-82e6-bc9733d8a3ae",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c297af4a-19b1-4311-b6f4-9422a1f6562e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1355x704",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3be29d06-41ac-4d29-88fd-d957bc6ce084",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,357)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d64508c-fd9d-408e-92f7-e78557a8fe90",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1836)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9bb0ea28-135e-4bbc-bbb9-6063aead1815",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,4539)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1448669-0ec9-4b5a-8910-a8ab3bc49ad7",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.ui-form__field:nth-child(1) .form-field__item", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='#app']/main/section[5]/div/div/div/form/p/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c017a8c-8d08-4707-88a5-9cf3ef2f1ca9",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.dirty", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='#app']/main/section[5]/div/div/div/form/p/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Vasilu"
+    }, {
+      "id": "0d591e48-3ef2-4586-bb32-e0500ab9f803",
+      "comment": "",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.ui-form__field:nth-child(2) .form-field__item", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='#app']/main/section[5]/div/div/div/form/p[2]/label/input", "xpath:idRelative"],
+        ["xpath=//p[2]/label/input", "xpath:position"]
+      ],
+      "value": "8999943743734843"
+    }, {
+      "id": "ca1b76af-6aeb-438c-9ee8-04b870f365e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-form__button",
+      "targets": [
+        ["css=.ui-form__button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='#app']/main/section[5]/div/div/div/form/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Отправить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad941ebc-4b54-4d56-aef1-c2a68676abf0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "491a845e-2638-400a-966a-7f1010e008ca",
+    "name": "Skillbox smoke test 2 - Воспроизведение видео на главной странице",
+    "commands": [{
+      "id": "361d387c-8180-4ab1-8e9c-05c66eb1dae8",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2a3de6c-7231-4d63-8f04-56a2614fe1d9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=path:nth-child(2)",
+      "targets": [
+        ["css=path:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc1fabbd-b2d4-43dd-91aa-d3e107f1de2d",
+      "comment": "",
+      "command": "click",
+      "target": "css=path:nth-child(2)",
+      "targets": [
+        ["css=path:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "6dd36836-02c9-485d-b519-6f2e09dce5e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.close-button__icon > use",
+      "targets": [
+        ["css=.close-button__icon > use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "cca1a78b-2a52-429d-8ddc-8ac21ffd3c2a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "663b5450-baa8-4d82-84e0-8de22fa9224a",
+    "name": "Skillbox smoke test 3 -",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "d479ec5c-95c6-46ba-ba1e-a6c7d77adfc0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["34735a9e-a55c-438c-beb2-ffba5428d88a"]
+  }],
+  "urls": ["https://live.skillbox.ru/", "https://skillbox.ru/"],
+  "plugins": []
+}
